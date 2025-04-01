@@ -57,13 +57,17 @@ const Navbar = () => {
                   })}
               </ul>
               <div className="social_icons" >
-                  {socialIcons.map((socialIcon, index) => {
-                  return (
-                      <div key={index}>
-                          {socialIcon}
-                      </div>
-                  )
-              })}
+                  {socialIcons.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social_icon_link"
+                      >
+                        {social.icon}
+                      </a>
+                    ))}
               </div>
               <div className="menu" >
                   <HiMenuAlt4 onClick={() => {setToggle(true)}}/>

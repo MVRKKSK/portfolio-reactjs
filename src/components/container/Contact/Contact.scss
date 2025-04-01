@@ -46,21 +46,20 @@
         }
         .social_icons {
             display: flex;
+            gap: 3px; // 3px gap between icons
             margin-top: 1rem;
-
-            div {
-                margin-right: 1rem;
-                cursor: pointer;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-
-                svg {
-                    font-size: 1.3rem;
-                }
+          
+            .social_icon_link {
+              font-size: 1.5rem;
+              color: black; // black icons
+              transition: transform 0.2s ease;
+          
+              &:hover {
+                transform: scale(1.2); // subtle hover scale effect
+              }
             }
-        }
+          }
+          
 
         
     }
@@ -113,4 +112,25 @@
             text-transform: capitalize;
         }
     }
+}
+
+.success-message {
+    color: #4BB543;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+.btn-send{
+    outline: none;
+    background: #8c12f0;
+    border: 0px;
+    color: white;
+    cursor: pointer;
 }

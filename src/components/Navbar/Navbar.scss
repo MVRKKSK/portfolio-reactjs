@@ -32,26 +32,20 @@
    }
    .social_icons {
     display: flex;
-       @media screen and (max-width: 800px) {
-        display: none;
-       }
-       div {
-           margin-left: 1rem;
-
-        svg {
-        cursor: pointer;
-        color: #fff;
-        opacity: 0.6;
-        transition: 0.3s;
-        z-index: 5;
-        
-        &:hover {
-            opacity: 1;
-        }
-       }
-       
-     }
-   }
+    gap: 3px; // 3px gap between icons
+    margin-top: 1rem;
+  
+    .social_icon_link {
+      font-size: 1.5rem;
+      color: white; // black icons
+      transition: transform 0.2s ease;
+  
+      &:hover {
+        transform: scale(1.2); // subtle hover scale effect
+      }
+    }
+  }
+  
    
    .menu {
     background: #fff;

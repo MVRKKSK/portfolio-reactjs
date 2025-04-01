@@ -2,40 +2,51 @@ import { FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 import { BsMedium } from "react-icons/bs";
-import work1 from "./assets/work1.png";
-import work2 from "./assets/work2.png";
-import work3 from "./assets/work3.png";
-import work4 from "./assets/work4.png";
-import work5 from "./assets/work5.png";
-import work6 from "./assets/work6.png";
+import work1 from "./assets/agro.jpg";
+import work2 from "./assets/nft.jpg";
+import work3 from "./assets/csv.png";
+import work4 from "./assets/dots.jpg";
+import work5 from "./assets/payment.jpg";
+import work6 from "./assets/video.jpg";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
 
 export const socialIcons = [
-  <FaInstagram />,
-  <FaGithub />,
-  <FaLinkedin />,
-  <BsMedium />
-]
-
+  {
+    icon: <FaInstagram />,
+    url: 'https://www.instagram.com/mvrkkautilya'
+  },
+  {
+    icon: <FaGithub />,
+    url: 'https://github.com/MVRKKSK'
+  },
+  {
+    icon: <FaLinkedin />,
+    url: 'https://www.linkedin.com/in/mvrkksk'
+  },
+  {
+    icon: <BsMedium />,
+    url: 'https://medium.com/@shivakumar.kautilya'
+  }
+];
 export const bios = [
   {
     id: 1,
     icon: <FaUser />,
     key: "Name",
-    value: "Kautilya"
+    value: "Kautilya Miryala"
   },
   {
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+918499995799"
+    value: "+1 518-616-3663"
   },
   {
     id: 3,
     icon: <FaPaperPlane />,
     key: "Email",
-    value: "shivakumar.kautilya2020@vitbhopal.ac.in"
+    value: "vrk.kautilya@gmail.com"
   }
 ]
 
@@ -82,60 +93,72 @@ export const workImages = [
   {
     id: 1,
     img: work1,
-    name: "project 1",
-    category: "web"
+    name: "Agro-Assist",
+    category: "web",
+    github: "https://github.com/MVRKKSK/AgroAssist-Frontend",
+    website: "https://agro-assist-frontend.vercel.app/"
   },
   {
     id: 2,
     img: work2,
-    name: "project 2",
-    category: "web"
+    name: "NFT-Marketplace",
+    category: "web",
+    github: "https://github.com/MVRKKSK/NFT-MARKETPLACE",
+    website: null
   },
   {
     id: 3,
     img: work3,
-    name: "project 3",
-    category: "web"
+    name: "CSV to Google Sheets",
+    category: "web",
+    github: "https://github.com/MVRKKSK/Csv-to-Google-Sheet-importer",
+    website: "https://csv-to-google-sheet-importer.vercel.app/"
   },
   {
     id: 4,
     img: work4,
-    name: "project 4",
-    category: "app"
+    name: "Connect-4 Game",
+    category: "Games",
+    github: "https://github.com/MVRKKSK/Connect-Four",
+    website: "https://48dnk2-3000.csb.app/"
   },
   {
     id: 5,
     img: work5,
-    name: "project 5",
-    category: 'app'
+    name: "Payment Alert System Design",
+    category: 'System Design',
+    github: "https://github.com/MVRKKSK/System-Design",
+    website: null
   },
   {
     id: 6,
     img: work6,
-    name: "project 6",
-    category: "design"
+    name: "Video Streaming System Design",
+    category: "System Design",
+    github: "https://github.com/MVRKKSK/System-Design",
+    website: null
   }
 ]
 
 
 export const workNavs = [
-  "All", "Web", "Blockchain", "Python"
+  "All", "Web", "Games", "System Design"
 ]
 
 export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: "Hyderabad , India"
+    infoText: "New York , USA"
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "shivakumar.kautilya@gmail.com"
+    infoText: "vrk.kautilya@gmail.com"
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+91-8499834567"
+    infoText: "+1-518-616-3663"
   }
 ]

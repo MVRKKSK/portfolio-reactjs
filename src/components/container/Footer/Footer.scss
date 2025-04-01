@@ -37,15 +37,19 @@
 
         .social_icons {
             display: flex;
-            gap: 0.5rem;
-
-            svg {
-                opacity: 0.7;
-                cursor: pointer;
-                &:hover {
-                    opacity: 1;      
-                }
+            gap: 3px; // 3px gap between icons
+            margin-top: 1rem;
+          
+            .social_icon_link {
+              font-size: 1.5rem;
+              color: white; // black icons
+              transition: transform 0.2s ease;
+          
+              &:hover {
+                transform: scale(1.2); // subtle hover scale effect
+              }
             }
-        }
+          }
+          
     }
 }
