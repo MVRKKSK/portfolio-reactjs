@@ -44,7 +44,7 @@ const About = () => {
               </div>
             )
           })}
-          <motion.a href='#' download=""
+          <motion.a href='/resume.pdf' download="Miryala_Kautilya_Resume"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >

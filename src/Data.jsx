@@ -55,7 +55,7 @@ export const icons = [<FaHtml5 />, <FaCss3 />, <DiJavascript />, <SiTypescript /
 export const experiences = [
   {
     id: 1,
-    year: "2022",
+    year: "2024",
     position: "Backend Developer",
     company: "plypicker.com"
   },
